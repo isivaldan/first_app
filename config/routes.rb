@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root'pages#one'
 
   get '/two', to:'pages#two'
+  get '/three', to:'pages#two'
 end
