@@ -7,16 +7,33 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
   </head>
 
   <body >
- 
-          
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="<%= one_path %>">One <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="<%= two_path %>">Two</a>
+      <a class="nav-item nav-link" href="<%= three_path %>">Three</a>
+      <%= # VERO!! no se pq no me resulto el pages_one_path, será pq cree las vistas a mano?, pero me resulto sacandole el nombre pages 
+      %>
+    
+    </div>
+  </div>
+</nav>
+
+
+
     <%= yield %>
 
-  
-						
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
