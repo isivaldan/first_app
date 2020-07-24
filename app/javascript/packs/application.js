@@ -7,6 +7,11 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+    // require("packs/jquery.min.js")
+    // require("packs/breakpoints.min.js")
+    // require("packs/browser.min.js")
+    // require("packs/main.js")
+    // require("packs/util.js")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
