@@ -12,24 +12,9 @@
   </head>
 
   <body >
-  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse">
   
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="<%= one_path %>">One <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="<%= two_path %>">Two</a>
-      <a class="nav-item nav-link" href="<%= three_path %>">Three</a>
-      <%= # VERO!! no se pq no me resulto el pages_one_path, será pq cree las vistas a mano?, pero me resulto sacandole el nombre pages 
-      %>
-    
-    </div>
-  </div>
-</nav>
 
-
+<%= render  "shared/navbar" %>
 
     <%= yield %>
 
